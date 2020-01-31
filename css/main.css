@@ -7,11 +7,30 @@ tags
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  font-size: 1.00em;
+}
+
+.project-head > h1 {
+  font-size: 5.0rem;
+  text-align: center;
+  color: rgb(245,10,10);
+  font-family: lobster;
+}
+.project-head > p {
+  font-size: 3vw;
+  text-align: center;
+  color: rgb(235, 40, 40);
+  font-family: lobster;
 }
 
 li {
   margin: 0;
   padding: 0;
+}
+
+figcaption {
+  display: float;
 }
 /*
 Navigation Bar CSS
@@ -23,6 +42,7 @@ Navigation Bar CSS
   background-color: black;
   height: 60px;
   width: 99vw;
+  z-index: 5;
 }
 ul > li {
   color: white;
@@ -32,7 +52,6 @@ ul > li {
   margin: 0;
 }
 ul > li > a {
-  
   color: inherit;
   text-decoration: none;
   padding: 1em;
@@ -49,9 +68,54 @@ ul > li > a {
 /*
 Body CSS
 */
-#filler {
-  height: 100vh;
-  width: 99vw;
+#landingphoto {
+  width: 100%;
+  margin-top: 50px;
+  z-index: 0;
+}
+.solo {
+  color: rgb(170,170,170);
+  font-size: 4vw;
+  position: absolute;
+  left: 5vw;
+  z-index: 2;
+}
+#haiku1 {
+    top: 150px;
+}
+#haiku2 {
+    top: 210px;
+}
+
+#haiku3 {
+  top: 270px;
+}
+
+.test{
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  text-align: center;
+  height: 120vh;
+  width: 100vw;
+}
+
+.project-title {
+  font-size: 1.2em;
+  margin: .5em 1.2em 1em;
+}
+
+.grid-photo{
+  height: 450px;
+  width: 450px;
+  border-radius: 2px;
 }
 /*
 Footer
@@ -60,11 +124,12 @@ Footer
   display: flex;
   justify-content: space-around;
   background-color: black;
-  height: 200px;
+  height:27vh;
   width: 99vw;
 }
 .selfie {
-  height: 180px;
+  height: 120px;
+  width: 280px;
   margin-top: 10px;
   border-radius: 50%;
 }
@@ -73,9 +138,14 @@ Footer
   max-width: 30%;
 }
 .aboutme figcaption {
-  color:white;
+  color: white;
   margin-left: 20px;
   margin-top: 18px;
+}
+
+.fcclogo {
+  max-width:80%;
+  height: auto;
 }
 .progress {
   display: flex;
@@ -98,6 +168,6 @@ Footer
   margin: 10px 0;
   flex-direction: column;
   align-items: center;
-  color:white;
+  color: white;
   max-width: 30%;
 }
